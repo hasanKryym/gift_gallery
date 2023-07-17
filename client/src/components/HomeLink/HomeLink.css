@@ -1,0 +1,6 @@
+.home_link {
+  position: fixed;
+  padding: 0 1rem;
+  font-size: 24px;
+  color: var(--blue);
+}

@@ -1,0 +1,42 @@
+.admin_container .buttons_cotnainer {
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin_container .products_btns {
+  background: #212121;
+  padding: 12px;
+  border-radius: 6px;
+  color: #e2e2e2;
+  transition: all 0.1s linear;
+}
+
+.admin_container .products_btns:hover {
+  background: #000;
+  color: #fff;
+}
+
+.manage_products-header {
+  position: relative;
+}
+
+.manage_products-header .manage_products-add_btn {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  font-size: 24px;
+  background: #212121;
+  color: #e2e2e2;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.2s linear;
+}
+
+.manage_products-header .manage_products-add_btn:hover {
+  cursor: pointer;
+  background: transparent;
+  color: #212121;
+}

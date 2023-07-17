@@ -1,0 +1,38 @@
+.admin_container {
+  margin-left: 6rem;
+  padding-top: 1rem;
+}
+
+.admin_container .screen_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.admin_container .header_article {
+  width: 190px;
+  height: fit-content;
+  background: white;
+  border-radius: 10px;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.admin_container .header_article .article_info {
+  padding: 1rem;
+}
+
+.admin_container .shadow {
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(190, 190, 190),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.admin_container .screen_header-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.admin_container .header_article .value {
+  text-align: center;
+}

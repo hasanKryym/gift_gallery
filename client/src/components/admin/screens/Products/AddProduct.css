@@ -1,0 +1,126 @@
+.details_container.add_products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feed-form {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.feed-form input {
+  height: 54px;
+  border-radius: 5px;
+  background: white;
+  margin-bottom: 15px;
+  border: none;
+  padding: 0 20px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #4b4b4b;
+}
+
+.button_submit:hover,
+.feed-form input:hover {
+  transform: scale(1.009);
+  box-shadow: 0px 0px 3px 0px #212529;
+}
+
+.button_submit {
+  width: 100%;
+  margin-top: 1rem;
+  height: 54px;
+  font-size: 14px;
+  color: #e2e2e2;
+  background: #212121;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.1s linear;
+}
+
+.button_submit:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Gender styles */
+
+/* MAIN */
+/* =============================================== */
+.label {
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  padding: 14px 16px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.label:hover,
+.label:focus-within,
+.label:active {
+  background: hsla(0, 0%, 80%, 0.14);
+}
+
+.radio-input-wrapper {
+  margin: 1rem 0;
+}
+
+.radio-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.radio-design {
+  width: 22px;
+  height: 22px;
+  border-radius: 100px;
+  background: linear-gradient(
+    to right bottom,
+    hsl(154, 97%, 62%),
+    hsl(225, 97%, 62%)
+  );
+  position: relative;
+}
+
+.radio-design::before {
+  content: '';
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  /* background: hsl(0, 0%, 90%); */
+  background: hsl(0, 0%, 60%);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.radio-input:checked + .radio-design::before {
+  transform: scale(0);
+}
+
+.label-text {
+  /* color: hsl(0, 0%, 60%); */
+  color: hsl(0, 0%, 40%);
+  margin-left: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 900;
+  transition: 0.3s;
+}
+
+.radio-input:checked ~ .label-text {
+  color: #212121;
+}
